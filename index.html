@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event-Chatbot</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event-Chatbot</title>
 
-    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
-    <script src="https://files.bpcontent.cloud/2025/10/25/21/20251025212058-3VAR31OV.js" defer></script>
-    
-  </head>
-  <body>
-    <h1>Willkommen!</h1>
-    <p>Unser Chatbot hilft dir bei der Planung deines Events.</p>
+  <!-- Botpress Webchat Scripts -->
+  <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2025/10/25/21/20251025212058-3VAR31OV.js" defer></script>
 
-    <!-- Botpress Webchat Integration -->
-    <div id="bp-embedded-webchat">
-      
-    </div>
-  </body>
+  <!-- Custom Styling for Chat Widget -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    #bp-embedded-webchat {
+      width: 400px;
+      max-width: 90%;
+      margin: 2rem auto;
+    }
+
+    iframe[src*="webchat"] {
+      width: 100% !important;
+      min-width: 400px !important;
+      height: 600px !important;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Willkommen!</h1>
+  <p>Unser Chatbot hilft dir bei der Planung deines Events.</p>
+
+  <!-- Botpress Webchat Container -->
+  <div id="bp-embedded-webchat"></div>
+</body>
 </html>
